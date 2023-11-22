@@ -22,10 +22,15 @@
     </ion-item>
   </ion-card>
   <ion-card>
-    <ion-button (click)="open_modal_tambah(true)" expand="block"shape="round">
+    <!-- <ion-button (click)="open_modal_tambah(true)" expand="block"shape="round">
       Tambah Mahasiswa
-    </ion-button>
+    </ion-button> -->
   </ion-card>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="open_modal_tambah(true)" expand="block">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
   <!-- ini untuk modal tambah -->
   <ion-modal [isOpen]="modal_tambah">
